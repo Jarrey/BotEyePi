@@ -16,4 +16,4 @@
 
 ## Features
 * Detect bar image:
-	* `python barreader.py [image file path]`
+	* `python bar_reader.py [image file path]`
