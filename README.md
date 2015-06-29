@@ -12,6 +12,8 @@
 	* (in Debian) `sudo apt-get install python-zbar`
 * **python-imaging**
 	* (in Debian) `sudo apt-get install python-imaging`
+* **python-opencv**
+	* (in Debian) `sudo apt-get install libopencv-dev python-opencv` with opencv dev libraries.
 
 
 ## Features
