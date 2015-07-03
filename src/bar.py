@@ -3,6 +3,7 @@ from sys import argv
 import zbar
 import Image
 
+#BarReader class
 class BarReader:
     def __init__(self, imagePath, setting):
         self.setting = setting
@@ -18,16 +19,34 @@ class BarReader:
         
     def getSymbol(self):
         # scan the image for barcodes
-        self.scanner.scan(image)
+        self.scanner.scan(self.image)
         # extract results
-        for symbol in image:
+        for symbol in self.image:
             # do something useful with results
             return BarResult(symbol.type, symbol.data)
+        
     def __del__(self):
         # clean up
         del(self.image)
+
+# BarResult class
+class BarResult:
+    def __init__(self, decoded, data):
+        self.decoded = decoded
+        self.data = data
+        
+    def getDecoded(self):
+        return self.decoded
+    
+    def getData(self):
+        return self.data
+    
+    def __str__(self):
+        return 'Decoded: %s\nData: %s' % (self.decoded, self.data)
+    
 if __name__ == '__main__':
-    if len(argv) < 2: exit(1)
+    if len(argv) < 2:
+        exit(1)
 
     barreader = BarReader(argv[1], None)
     print  barreader.getSymbol()
