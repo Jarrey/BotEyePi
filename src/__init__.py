@@ -1,2 +1,2 @@
 #!/usr/bin/python
-__all__ = ['bar']
+__all__ = ['bar', 'utilities']
