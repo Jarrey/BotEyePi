@@ -1,9 +1,6 @@
 #!/usr/bin/python
-import zbar
 import picamera
 import io
-import Image
-import time
 import bar
 
 class Capturer():
