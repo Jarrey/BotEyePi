@@ -25,4 +25,4 @@
 	* `python detector.py [image file path]`
 * Real time to detect the bar-code:
 	* `python capturer.py`
-	* Before use 'capturer.py', please use 'setup_camera.py' to set the Pi Camera and set the force and field.
+	* Before use `capturer.py`, please use `setup_camera.py` to set the Pi Camera and set the force and field.
