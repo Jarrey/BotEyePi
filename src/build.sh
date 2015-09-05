@@ -1,3 +1,4 @@
+#!/bin/bash
 rm bin -f -r
 rm *.pyc -f
 python build.py
