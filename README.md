@@ -6,6 +6,7 @@
 
 ## Environment
 * Python 2.7
+	* `sudo apt-get install python`
 
 ## Dependencies
 * **python-picamera** A Raspberry Pi camera python moudle to drive camera from python.
@@ -14,7 +15,9 @@
 	* (in Debian) `sudo apt-get install python-zbar`
 * **python-imaging** Python Image Library (PIL)
 	* (in Debian) `sudo apt-get install python-imaging`
-* **python-opencv**
+* **python-serial** Python serial port library
+	* (in Debian) `sudo apt-get install python-serial`
+* **python-opencv** (Optional)
 	* (in Debian) `sudo apt-get install libopencv-dev python-opencv` with opencv dev libraries.
 
 
