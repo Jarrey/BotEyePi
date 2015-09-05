@@ -2,7 +2,7 @@
 import py_compile as c
 import os
 
-files = ['run.py', 'bar.py', 'capturer.py', 'logger.py', 'power_monitor.py']
+files = ['run.py', 'bar.py', 'capturer.py', 'logger.py', 'power_monitor.py', 'setup_camera.py']
 
 for f in files:
 	c.compile(f)
