@@ -26,9 +26,12 @@
 	* Delete `console=ttyAMA0,115200 kgdboc=ttyAMA0,115200` from `/boot/cmdline.txt`
 	* Comment line `T0:23:respawn:/sbin/getty -L ttyAMA0 115200 vt100` in `/etc/inittab`
 * Manully add two lines in `/etc/rc.local`
-	* `/usr/bin/python /speedpro/run/pyc &`
+	* `/usr/bin/python /speedpro/run.pyc &`
 	* `/usr/bin/python /speedpro/power_monitor.pyc &`
 
+
+## Complie Code and Deployment
+* Execute `src/build` script and copy all files from `src/bin` (use command `chmod +x build` to add permission for build script)
 
 ## Features
 * Detect bar-code image:
