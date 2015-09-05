@@ -4,6 +4,19 @@ import numpy as np
 import cv2
 import cv2.cv as cv
 
+class MarkDetector:
+
+    def __init__(self, setting):
+        self.__parse_setting(setting)
+
+    def __del__(self):
+        # clean up
+        del(self.image)
+
+    # private methods
+    
+    def __parse_setting(self, setting):    
+    
 def detectCircle(imagePath):
     image = cv2.imread(imagePath)
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)

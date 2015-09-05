@@ -3,11 +3,12 @@ from sys import argv
 import zbar
 import Image
 import io
+import setting as s
 
 #BarReader class
 class BarReader:
-    def __init__(self, setting):
-        self.setting = setting
+    def __init__(self, region):
+        self.bar_region = region
         # create a bar reader
         self.scanner = zbar.ImageScanner()
         # configure the reader
@@ -18,9 +19,9 @@ class BarReader:
         del(self.image)
 
     # private methods
-    
     def __readImage(self, img):
-        pil = Image.open(img).convert('L')
+        pil = Image.open(img).crop(self.bar_region).convert('L')
+        if s.debug_mode : pil.save('debug.jpg')
         # obtain image data
         width, height = pil.size
         raw = pil.tostring()
