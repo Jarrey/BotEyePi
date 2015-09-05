@@ -2,7 +2,7 @@
 debug_mode = False
 
 # Log file
-log_file = 'log'
+log_file = 'speedpro_log.log'
 
 # Serial port settings
 ser_dev_name = "/dev/ttyAMA0"
