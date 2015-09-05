@@ -13,6 +13,8 @@
 	* (in Debian) `sudo apt-get install python-picamera`
 * **pyhton-zbar**
 	* (in Debian) `sudo apt-get install python-zbar`
+* **pyhton-RPi.GPIO**
+	* (in Debian) `sudo apt-get install python-RPi.GPIO`
 * **python-imaging** Python Image Library (PIL)
 	* (in Debian) `sudo apt-get install python-imaging`
 * **python-serial** Python serial port library
