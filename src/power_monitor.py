@@ -2,6 +2,7 @@
 import RPi.GPIO as GPIO
 import time
 import os
+import gpio_utilities
 
 power_pin = 43
 
@@ -14,7 +15,7 @@ GPIO.setup(power_pin, GPIO.IN)
 
 try:
     while True:
-        if GPIO.input(power_pin) == GPIO.LOW:
+        if gpio_utilities.getGPIOInput(power_pin1, 20) == GPIO.LOW:
             # print GPIO.input(power_pin)
             os.system("halt")
         time.sleep(1)
