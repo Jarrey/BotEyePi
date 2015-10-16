@@ -1,4 +1,6 @@
-# BotEyePi
+# BotEyePi 
+## -- support Matrix code ##
+*(Please view [EnvironmentSetup](EnvironmentSetup.md) for more details about matrix bar-code identification)*
 
 **A "robot eye" detection for industry based on Python and Rasberry Pi platform**
 
