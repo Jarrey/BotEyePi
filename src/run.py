@@ -7,6 +7,7 @@ import setting as s
 import os
 import logger as l
 import time
+import gpio_utilities
 
 ids = []
 
@@ -32,7 +33,7 @@ def capture():
         while True: 
             time.sleep(0.1)           
             # Monitor GPIO to get the control signal
-            signal = GPIO.input(s.switchInPin) 
+            signal = gpio_utilities.getGPIOInput(s.switchInPin, 5) 
             if signal == s.signal_control:
                 
                 # Turn on light and capture image
@@ -46,7 +47,7 @@ def capture():
                 
                 if s.debug_mode : print "IDs: ", ids
                 
-                while GPIO.input(s.switchInPin) == s.signal_control: pass
+                while gpio_utilities.getGPIOInput(s.switchInPin, 5) == s.signal_control: pass
                 GPIO.output(s.outputPin, GPIO.LOW)
     except Exception as error:
         l.logger.info(error)
@@ -88,4 +89,5 @@ try:
 except KeyboardInterrupt:
     del(c)
     GPIO.output(s.lightPin, GPIO.LOW)
+    GPIO.cleanup()
     pass
