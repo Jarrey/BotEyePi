@@ -1,10 +1,10 @@
 # BotEyePi 
 ## -- support Data Matrix bar-code ##
-*(Please view **[zxing README](lib/README.md)** for more details about data matrix bar-code format identification)*
+*(Please view [zxing README](lib/README.md) for more details about data matrix bar-code format identification)*
 
-*(Please view **[doc/ZXING_INFO.md](doc/ZXING_INFO.md)** for more information of libraries and components)*
+*(Please view [doc/ZXING_INFO.md](doc/ZXING_INFO.md) for more information of libraries and components)*
 
-*(Please view **[doc/RUN_INFO.md](doc/RUN_INFO.md)** for more information about [src/run.py](src/run.py) code)*
+*(Please view [doc/RUN_INFO.md](doc/RUN_INFO.md) for more information about [src/run.py](src/run.py) code)*
 
 **A "robot eye" detection for industry based on Python and Rasberry Pi platform**
 
