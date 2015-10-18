@@ -1,7 +1,16 @@
 #!/usr/bin/python
+
+########################################################################
+#
+#  Created by Jarrey (jar_bob@163.com) for Speedpro Inc.
+#  Copyright by Speedpro Inc. 2015
+#
+########################################################################
+
 import picamera
 import io
-import bar
+#import bar
+import bar_zxing
 import setting as s
 
 class Capturer():

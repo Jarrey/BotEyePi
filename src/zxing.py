@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 ########################################################################
 #
 #  zxing.py -- a quick and dirty wrapper for zxing for python

@@ -1,3 +1,10 @@
+########################################################################
+#
+#  Created by Jarrey (jar_bob@163.com) for Speedpro Inc.
+#  Copyright by Speedpro Inc. 2015
+#
+########################################################################
+
 # Global setting
 debug_mode = False
 
@@ -34,3 +41,7 @@ bar_region = (120, 150, 900, 350)
 # Marker settings
 left_marker_region = (0, 0, 1024, 768)
 right_marker_region = (0, 0, 1024, 768)
+
+# zxing library settings
+zxing_lib_loc = "zxing"
+zxing_ver = "2.2"

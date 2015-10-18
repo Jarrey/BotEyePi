@@ -1,14 +1,19 @@
 # BotEyePi 
-## -- support Matrix code ##
-*(Please view [zxing README](lib/README.md) for more details about data matrix bar-code format identification)*
+## -- support Data Matrix bar-code ##
+*(Please view **[zxing README](lib/README.md)** for more details about data matrix bar-code format identification)*
+
+*(Please view **[doc/ZXING_INFO.md](doc/ZXING_INFO.md)** for more information of libraries and components)*
+
+*(Please view **[doc/RUN_INFO.md](doc/RUN_INFO.md)** for more information about [src/run.py](src/run.py) code)*
 
 **A "robot eye" detection for industry based on Python and Rasberry Pi platform**
 
 
 
 ## Environment
-* Python 2.7
+* **Python 2.7**
 	* `sudo apt-get install python`
+* **Java 6** (be better to update to Java 7, need manually install Java 7 runtime)
 
 ## Dependencies
 * **python-picamera** A Raspberry Pi camera python moudle to drive camera from python.
@@ -33,7 +38,6 @@
 * Manually add two lines in `/etc/rc.local` to enable run program while system startup
 	 `/usr/bin/python /speedpro/run.pyc &`
 	 `/usr/bin/python /speedpro/power_monitor.pyc &`
-
 
 ## Complie Code and Deployment
 * Execute `src/build.sh` script and copy all files from `src/bin` (use command `chmod +x build` to add execution permission for build script)
